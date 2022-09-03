@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/forms.css">
+    <link rel="stylesheet" href="/styles/button.css">
+    <script src="userscript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- movement links-->
+
+    <div class="links">
+        <a href="/index.html">back</a>
+        <a href="/success.html">success</a>
+    </div>
+
+    <!-- movement links-->
+
+
+    <div class="heading-info">
+        <div class="worker-info">
+            თანამშრომლის ინფო
+        </div>
+
+        <div class="laptop-info">
+            ლეპტოპის მახასიათებლები
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="form-container">
+             
+                <div class="input-container">  
+                    <div class="name-container">
+                        <label class="label" for="firstName">სახელი:</label>
+                        <label class="hint" for="firstName">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+                        <input class="input-norm" type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="name-container">
+                        <label class="label" for="lastName">გვარი:</label>
+                        <label class="hint" for="lastName">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+                        <input class="input-norm" type="text" name="lastName" id="lastName">
+                    </div>
+                </div>
+
+                <div class="dropdown-container">
+                    <div class="dropdown-team">
+                        <select class="dropdown" name="team" id="team">
+                            <option selected disabled>თიმი</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                        </select>
+                    </div>
+
+                    <div class="dropdown-position">
+                        <select class="dropdown" name="team" id="team">
+                            <option selected disabled>პოზიცია</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="info-container">
+                    <div class="email-info">
+
+                    </div>
+                    <div class="phone-info">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div> -->
+    <div>
+        <form id="form" action="/" method="GET">
+            <div id="firstForm" class="firstForm">
+                <div>
+                    <label for="firstName">სახელი:</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label id="firstNameHint" for="firstName">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
+                </div>
+                <div>
+                    <label for="lastName">გვარი:</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div>
+                    <select name="team" id="team">
+                        <option selected disabled>თიმი</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="position" id="position">
+                        <option selected disabled>პოზიცია</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phoneNumber">ნომერი:</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                </div>
+
+            </div>
+            
+            
+             <!-- laptop information form -->
+
+
+            <div id="laptopForm" class="laptopContainer">
+                <div class="laptopImg">
+                    <button>add a photo</button>
+                </div>
+
+                <div class="laptopName">
+                    <label for="laptop-name">ლეპტოპის სახელი</label>
+                    <input type="text" name="laptop-name">
+                </div>
+
+                <div class="laptopBrand">
+                    <select name="laptop-brand" id="">
+                        <option selected disabled>ლეპტოპის ბრენდი</option>
+                    </select>
+                </div>
+
+                <div class="cpuBrand">
+                    <select name="cpu-brand" id="">
+                        <option selected disabled>CPU</option>
+                    </select>
+                </div>
+
+                <div class="cpuCore">
+                    <label for="cpu-core">CPU-ს ბირთვი</label>
+                    <input type="text" name="cpu-core" id="">
+
+                </div>
+
+                <div class="cpuNum">
+                    <label for="cpu-num">CPU-ს ნაკადი</label>
+                    <input type="text" name="cpu-num" id="">
+                </div>
+
+                <div class="laptopRam">
+                    <label for="laptop-ram">ლეპტოპის RAM (GB)</label>
+                    <input type="text" name="laptop-ram">
+                </div>
+
+                <div class="memoryType">
+                    <label for="ssd" for="hdd">მეხსიერების ტიპი</label>
+                    <input type="radio" name="ssd" id="">
+                    <input type="radio" name="hdd" id="">
+                </div>
+
+                <div class="buyDate">
+                    <label for="buy-date">შეძენის რიცხვი</label>
+                    <input type="text" name="buy-date" id="">
+                </div>
+
+                <div class="laptopPrice">
+                    <label for="laptop-price">ლეპტოპის ფასი</label>
+                    <input type="text" name="laptop-price" id="">
+                </div>
+
+                <div class="laptopCondition">
+                    <label for="new" form="old">ლეპტოპის მდგომარეობა</label>
+                    <input type="radio" name="new">
+                    <input type="radio" name="old">
+                </div>
+            </div>
+            <div class="submitForm">
+                <button id="submitForm" type="submit" class="submit">submit</button>
+            </div>
+        </form>
+        <button id="nextForm">შემდეგი</button>
+        <button class="lastBtn" id="lastForm">უკან</button>
+    </div>
+
+    <script>
+        // const fillFromStorage = () => {
+        //     const obj = JSON.parse(localStorage.getItem('formObj'));
+        //     if (obj) {
+        //         for (let key of Object.keys(obj)) {
+        //             let input = document.getElementById(key);
+        //             input.value = obj[key];
+        //         }
+        //     }
+        // }
+        // fillFromStorage();
+
+        // let form = document.getElementById('form');
+        // let inputArr = document.getElementsByTagName('input');
+        // let selectArr = document.getElementsByTagName('select');
+
+        // for (let input of [...inputArr, ...selectArr]) {
+        //     input.addEventListener('input', (e) => {
+        //         const value = input.value;
+        //         const obj = JSON.parse(localStorage.getItem('formObj'));
+        //         const objToSet = { ...obj };
+        //         objToSet[input.id] = value;
+        //         localStorage.setItem('formObj', JSON.stringify(objToSet));
+        //         const obj1 = localStorage.getItem('formObj');
+        //         console.log(obj1)
+        //     })
+        // }
+
+        // const name = document.getElementById('firstName');
+        // const lastName = document.getElementById('lastName');
+        // const team = document.getElementById('team')
+        // const position = document.getElementById('position')
+        // const email = document.getElementById('email')
+        // const phoneNumber = document.getElementById('phoneNumber')
+
+        // form.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+        // })
+
+        // function checkInputs() {
+        //     // get the values from the inputs
+        //     const nameValue = name.value.trim();
+        //     const lastNameValue =lastName.value.trim();
+        //     const teamValue = team.value.trim();
+        //     const positionValue = position.value.trim();
+        //     const emailValue = email.value.trim();
+        //     const phoneNumberValue = phoneNumber.value.trim();
+        //     const geoAlphabet = ["აბგდევზთიკლმნოპჟრსტუფქღყშჩძხჰ"]
+
+
+            // if() {
+            //     // add error class
+            //     const hintOne = document.getElementById('firstNameHint');
+            //     hintOne.classList.add('input-error')
+            //     console.log('error')
+            // }else {
+            //     // add success class
+            // }
+            // }
+
+        // fetch('https://pcfy.redberryinternship.ge/api/teams')
+        //     .then((response) => response.json())
+        //     .then((data) => {
+        //         console.log(data)
+        //         const selectTeams = document.getElementById('team');
+        //         selectTeams.innerHTML = '';
+        //         for(let item of data.data) {
+        //             selectTeams.innerHTML += `<option value="${item.id}">${item.name}</option>`
+        //         }
+        //     });
+
+        const nextBtn = document.getElementById('nextForm');
+        const laptopForm = document.getElementById('laptopForm');
+        const firstForm = document.getElementById('firstForm');
+        const backBtn = document.getElementById('lastForm');
+        let submitBtn = document.getElementById('submit')
+          
+            nextBtn.addEventListener('click', () => {
+                laptopForm.style.display = "flex"
+                firstForm.style.display = "none"
+                nextBtn.style.display = "none"
+                backBtn.style.display = "block"
+            })
+
+            backBtn.addEventListener('click', () => {
+                laptopForm.style.display = "none"
+                firstForm.style.display = "block"
+                nextBtn.style.display = "block"
+                backBtn.style.display = "none"
+            })
+
+    </script>
+</body>
+
+</html>

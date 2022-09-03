@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.button-container {
+    width:387px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 79px;
+}
+
+.landing-logo {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cont-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.phone-img {
+    display: none;
+}
+
+@media (max-width:800px){
+    .desktop-img{
+        display: none;
+    }
+    .phone-img{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-container {
+        width: 360px;
+        margin-top: 50px;
+    }
+
+}

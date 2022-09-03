@@ -1,0 +1,48 @@
+/* Button Class */
+.btn {
+    height: 60px;
+    display: inline-flex;
+    padding: 0 45px;
+    background: #62A1EB;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn.btn-fluid{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: #317AD0;
+    cursor: pointer;
+}
+
+.btn:focus {
+    background-color: #1A5DAB;
+}
+/* Button Class END */
+
+
+
+/* Input Class */
+
+
+
+
+
+
+
+
+
