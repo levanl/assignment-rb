@@ -68,7 +68,7 @@
 //             selectTeams.innerHTML += `<option value="${item.id}">${item.name}</option>`
 //         }
 //     });
-
+let imageBlob;
 const nextBtn = document.getElementById('nextForm');
 const laptopForm = document.getElementById('laptopForm');
 const firstForm = document.getElementById('firstForm');
@@ -78,10 +78,11 @@ const form = document.getElementById('form')
 form.addEventListener('submit', (e) => {
     
     e.preventDefault();
-
+    const formData = new FormData(form);
+    // formData.append('laptop_image', imageBlob);
     fetch('https://pcfy.redberryinternship.ge/api/laptop/create?token=0a27eede2714b9c80c604a4f1ad0c88a', {
 		method: 'POST',
-		body: new FormData(form),
+		body: formData,
 	}).then(function (response) {
 		if (response.ok) {
 			return response.json();
@@ -111,7 +112,7 @@ backBtn.addEventListener('click', () => {
     backBtn.style.display = "none"
 })
 
-function getSelectOptions(selectName) {
+function getSelectOptions(selectName, subUrl, valueProperty = 'id') {
     if(!selectName) {
         console.error('No selectName provided!');
         return;
@@ -120,40 +121,41 @@ function getSelectOptions(selectName) {
     if(!select) {
         console.error(`select with name (${selectName}) not found`)
         return;
-    }
+    }       
 
 
-    fetch(`https://pcfy.redberryinternship.ge/api/${selectName}`)
+    fetch(`https://pcfy.redberryinternship.ge/api/${subUrl}`)
     .then((response) => response.json())
     .then((data) => {
         const options = data.data;
         options.forEach(element => {
             const optionElement = document.createElement('option');
             optionElement.text = element.name;
-            optionElement.value = element.id;
+            optionElement.value = element[valueProperty];
             select.add(optionElement)
         });
     })
 }
 
-getSelectOptions('teams');
-getSelectOptions('positions');
-getSelectOptions('brands');
-getSelectOptions('cpus')
+getSelectOptions('team_id', 'teams');
+getSelectOptions('position_id', 'positions');
+getSelectOptions('laptop_brand_id', 'brands');
+getSelectOptions('laptop_cpu', 'cpus', 'name')
 
 const imgInput = document.getElementById('imgInput');
 const preview = document.getElementById('img-preview');
-let imageBlob;
+
 imgInput.addEventListener('change', () => {
     const imageEl = document.createElement('img');
     const img = imgInput.files[0];
-    image.src = URL.createObjectURL(img);
+    imageEl.src = URL.createObjectURL(img);
     preview.appendChild(imageEl);
 
     const reader = new FileReader();
 
     reader.onload = (e) => {
         imageBlob = e.target.result;
+        console.log(imageBlob);
     }
 
     reader.readAsBinaryString(img);

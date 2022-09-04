@@ -93,16 +93,16 @@
                     <label id="firstNameHint" for="name">მინიმუმ 2 სიმბოლო, ქართული ასოები</label>
                 </div>
                 <div>
-                    <label for="lastName">გვარი:</label>
-                    <input type="text" name="lastName" id="lastName">
+                    <label for="surname">გვარი:</label>
+                    <input type="text" name="surname" id="surname">
                 </div>
                 <div>
-                    <select name="teams" id="teams">
+                    <select name="team_id" id="team_id">
                         <option selected disabled>თიმი</option>
                     </select>
                 </div>
                 <div>
-                    <select name="positions" id="positions">
+                    <select name="position_id" id="position_id">
                         <option selected disabled>პოზიცია</option>
                     </select>
                 </div>
@@ -111,8 +111,8 @@
                     <input type="email" name="email" id="email">
                 </div>
                 <div>
-                    <label for="phoneNumber">ნომერი:</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                    <label for="phone_number">ნომერი:</label>
+                    <input type="tel" name="phone_number" id="phone_number">
                 </div>
 
             </div>
@@ -126,47 +126,47 @@
                     <div id="img-preview">
 
                     </div>
-                    <input id="imgInput" type="file" />
+                    <input id="imgInput" name="laptop_image" type="file" />
                 </div>
 
                 <div class="laptopName">
-                    <label for="laptop-name">ლეპტოპის სახელი</label>
-                    <input type="text" name="laptop-name">
+                    <label for="laptop_name">ლეპტოპის სახელი</label>
+                    <input type="text" name="laptop_name" id="laptop_name">
                 </div>
 
                 <div class="laptopBrand">
-                    <select name="brands" id="brands">
+                    <select name="laptop_brand_id" id="laptop_brand_id">
                         <option selected disabled>ლეპტოპის ბრენდი</option>
                     </select>
                 </div>
 
                 <div class="cpuBrand">
-                    <select name="cpu-brand" id="cpus">
+                    <select name="laptop_cpu" id="laptop_cpu">
                         <option selected disabled>CPU</option>
                     </select>
                 </div>
 
                 <div class="cpuCore">
                     <label for="cpu-core">CPU-ს ბირთვი</label>
-                    <input type="text" name="cpu-core" id="">
+                    <input type="text" name="laptop_cpu_cores" id="laptop_cpu_cores">
 
                 </div>
 
                 <div class="cpuNum">
                     <label for="cpu-num">CPU-ს ნაკადი</label>
-                    <input type="text" name="cpu-num" id="">
+                    <input type="text" name="laptop_cpu_threads" id="laptop_cpu_threads">
                 </div>
 
                 <div class="laptopRam">
                     <label for="laptop-ram">ლეპტოპის RAM (GB)</label>
-                    <input type="text" name="laptop-ram">
+                    <input type="text" name="laptop_ram" id="laptop_ram">
                 </div>
 
                 <div class="memoryType">
                     <label for="ssd" for="hdd">მეხსიერების ტიპი</label>
-                    <input type="radio" id="html" name="memoryType" value="HTML">
+                    <input type="radio" id="html" name="laptop_hard_drive_type" value="HDD">
                     <label for="html">hdd</label><br>
-                    <input type="radio" id="css" name="memoryType" value="CSS">
+                    <input type="radio" id="css" name="laptop_hard_drive_type" value="SSD">
                     <label for="css">ssd</label><br>
                 </div>
 
@@ -176,15 +176,15 @@
                 </div>
 
                 <div class="laptopPrice">
-                    <label for="laptop-price">ლეპტოპის ფასი</label>
-                    <input type="text" name="laptop-price" id="">
+                    <label for="laptop_price">ლეპტოპის ფასი</label>
+                    <input type="text" name="laptop_price" id="laptop_price">
                 </div>
 
                 <div class="laptopCondition">
                     <label for="new" form="old">ლეპტოპის მდგომარეობა</label>
-                    <input type="radio" id="html" name="condition" value="HTML">
+                    <input type="radio" id="html" name="laptop_state" value="new">
                     <label for="html">ახალი</label><br>
-                    <input type="radio" id="css" name="condition" value="CSS">
+                    <input type="radio" id="css" name="laptop_state" value="used">
                     <label for="css">ძველი</label><br>
                 </div>
             </div>
