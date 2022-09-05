@@ -17,7 +17,7 @@ fetch(`https://pcfy.redberryinternship.ge/api/laptops?token=0a27eede2714b9c80c60
             <p>pentinum II</p>
         </div>
         <div class="seemore">   
-            <a href="/detail.html?id=${profile.laptop.id}">მეტის ნახვა</a>
+            <a href="./detail.html?id=${profile.laptop.id}">მეტის ნახვა</a>
         </div>
         
     </div>
