@@ -41,6 +41,9 @@ fetch(`https://pcfy.redberryinternship.ge/api/laptop/${id}?token=0a27eede2714b9c
         const cpuName = cpu.name;
         const cpuCore = cpu.cores;
         const cpuFlow = cpu.threads;
+        const price = laptop.price;
+        const state = laptop.state;
+        const purchaseDate = laptop.purchase_date;
 
         const userNameElement = document.getElementById('name');
         userNameElement.innerText= userName;
@@ -56,6 +59,9 @@ fetch(`https://pcfy.redberryinternship.ge/api/laptop/${id}?token=0a27eede2714b9c
         drawData("cpuType",cpuName)
         drawData("cpuCoreId",cpuCore)
         drawData("cpuFlowId",cpuFlow)
+        drawData("laptopPriceId",price)
+        drawData("laptopStateId",state)
+        drawData("pulledDateId", purchaseDate)
     })
 
 
@@ -76,6 +82,10 @@ fetch(`https://pcfy.redberryinternship.ge/api/laptop/${id}?token=0a27eede2714b9c
         const options = data.data;
         console.log(options)
     })
+
+
+
+
 
 
 

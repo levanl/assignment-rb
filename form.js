@@ -76,6 +76,9 @@ const backBtn = document.getElementById('lastForm');
 const submitBtn = document.getElementById('submitForm');
 const actionsContainer = document.getElementById('actions-container');
 const form = document.getElementById('form')
+const workerUnderline = document.getElementById('worker');
+const laptopUnderline = document.getElementById('laptopInfoId');
+
 submitBtn.addEventListener('click', (e) => {
     
     e.preventDefault();
@@ -105,6 +108,8 @@ nextBtn.addEventListener('click', () => {
     backBtn.style.display = "inline-block"
     submitBtn.style.display = "inline-block"
     actionsContainer.classList.toggle('justyfy-content-space-between')
+    workerUnderline.style.borderBottomStyle = "none"
+    laptopUnderline.style.borderBottomStyle = "solid"
 })
 
 backBtn.addEventListener('click', () => {
@@ -114,6 +119,8 @@ backBtn.addEventListener('click', () => {
     backBtn.style.display = "none"
     submitBtn.style.display = "none"
     actionsContainer.classList.toggle('justyfy-content-space-between')
+    workerUnderline.style.borderBottomStyle = "solid"
+    laptopUnderline.style.borderBottomStyle = "none"
 })
 
 function getSelectOptions(selectName, subUrl, valueProperty = 'id') {
