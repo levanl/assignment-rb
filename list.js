@@ -8,7 +8,7 @@ fetch(`https://pcfy.redberryinternship.ge/api/laptops?token=0a27eede2714b9c80c60
  for(let profile of listProfiles){
     const boxElement = `
     <div class="box">
-    <img class="boxImg" src="https://picsum.photos/200/300" alt="">
+    <img class="boxImg" src="https://pcfy.redberryinternship.ge/${profile.laptop.image}" alt="">
     <div class="text">
         <div class="listName">
             <p>${profile.user.name} ${profile.user.surname}</p>
@@ -16,7 +16,7 @@ fetch(`https://pcfy.redberryinternship.ge/api/laptops?token=0a27eede2714b9c80c60
         <div class="listCpu">
             <p>pentinum II</p>
         </div>
-        <div class="seemore">
+        <div class="seemore">   
             <a href="/detail.html?id=${profile.laptop.id}">მეტის ნახვა</a>
         </div>
         
