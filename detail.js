@@ -16,8 +16,8 @@ console.log(id);
 fetch(`https://pcfy.redberryinternship.ge/api/laptop/${id}?token=0a27eede2714b9c80c604a4f1ad0c88a`)
     .then((response) => response.json())
     .then((data) => {
-        const laptopImg = document.getElementById('laptopImg')
-        laptopImg.src = URL.createObjectURL(image);
+        const laptopImg = document.getElementById('img2')
+        laptopImg.src = 'https://pcfy.redberryinternship.ge/' + data.data.laptop.image;
     })
 
 
