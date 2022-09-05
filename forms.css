@@ -20,6 +20,7 @@
     width: fit-content;
 }
 
+
 .laptop-info {
     text-decoration: none;
     font-family: 'Helvetica Neue', 'Roboto';
@@ -50,7 +51,7 @@
 
 form {
     width: 100%;
-    max-width: 926px;
+    max-width: 826px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -83,18 +84,6 @@ form {
     color: #62A1EB;
 }
 
-.dropdown-container {
-    height: 180px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
-
-
 .info-container {
     width: 100%;
     height: 300px;
@@ -104,6 +93,38 @@ form {
     width: 408px;
     height: 60px;
     border: 1.8px solid #8AC0E2;
+    border-radius: 8px;
+}
+.input-big {
+    width: 878px;
+    height: 60px;
+    border: 1.8px solid #8AC0E2;
+    border-radius: 8px;
+}
+
+.nameDiv {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.surNameDiv {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.firstRow {
+    display: flex;
+    gap: 70px;
+    height: 100px;
+}
+
+.position {
+    width: 878px;
+    height: 60px;
+
+    background: #EBEBEB;
     border-radius: 8px;
 }
 
@@ -125,20 +146,20 @@ form {
 }
 
 .label {
-    display: block;
-    transition: all 0.5s;
-    transform: translateY(1.2rem);
     font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
 }
 
 .hint {
-    display: block;
-    transition: all 0.5s;
-    transform: translateY(5.4rem);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 
-.dropdown {
+.dropdown-container{
     width: 878px;
     height: 60px;
     background: #EBEBEB;
@@ -146,6 +167,27 @@ form {
     font-weight: 900;
     font-size: 18px;
     border: none;
+}
+
+.secondRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53px;
+    margin-top: 52px;
+}
+
+.thirdRow {
+    margin-top: 51px;
+    display: flex;
+    height: 300px;
+    width: 926px;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.email-input-div {
+    width:926px;
+    height: 134px;
 }
 
 select {
@@ -162,7 +204,7 @@ select {
 
 
 .laptopContainer {
-    /* display: none; */
+    display: none;
     flex-direction: column;
 }
 
@@ -171,7 +213,7 @@ select {
 }
 
 .first-form {
-    display: block;
+    display: flex;
 }
 
 .submit {
