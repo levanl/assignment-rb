@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/forms.css">
     <link rel="stylesheet" href="/styles/button.css">
+    <link rel="stylesheet" href="/forms.css">
     <script src="userscript.js"></script>
 </head>
 
@@ -183,12 +183,14 @@
                     <label for="css">ძველი</label><br>
                 </div>
             </div>
-            <div class="submitForm">
-                <button id="submitForm" type="submit" class="submit">submit</button>
-            </div>
+            
         </form>
-        <button id="nextForm">შემდეგი</button>
-        <button class="lastBtn" id="lastForm">უკან</button>
+
+        <div class="actions" id="actions-container">
+            <button class="lastBtn btn back-btn" id="lastForm">უკან</button>
+            <button id="nextForm" class="btn">შემდეგი</button>
+            <button id="submitForm" type="submit" class="submit btn">submit</button>
+        </div>
     </div>
 
     <footer>

@@ -73,9 +73,10 @@ const nextBtn = document.getElementById('nextForm');
 const laptopForm = document.getElementById('laptopForm');
 const firstForm = document.getElementById('firstForm');
 const backBtn = document.getElementById('lastForm');
-const submitBtn = document.getElementById('submitForm')
+const submitBtn = document.getElementById('submitForm');
+const actionsContainer = document.getElementById('actions-container');
 const form = document.getElementById('form')
-form.addEventListener('submit', (e) => {
+submitBtn.addEventListener('click', (e) => {
     
     e.preventDefault();
     const formData = new FormData(form);
@@ -98,18 +99,21 @@ form.addEventListener('submit', (e) => {
 })
 
 nextBtn.addEventListener('click', () => {
-    laptopForm.style.display = "flex"
+    laptopForm.style.display = "inline-flex"
     firstForm.style.display = "none"
     nextBtn.style.display = "none"
-    backBtn.style.display = "block"
-    submitBtn.style.display = "block"
+    backBtn.style.display = "inline-block"
+    submitBtn.style.display = "inline-block"
+    actionsContainer.classList.toggle('justyfy-content-space-between')
 })
 
 backBtn.addEventListener('click', () => {
     laptopForm.style.display = "none"
-    firstForm.style.display = "block"
-    nextBtn.style.display = "block"
+    firstForm.style.display = "inline-block"
+    nextBtn.style.display = "inline-block"
     backBtn.style.display = "none"
+    submitBtn.style.display = "none"
+    actionsContainer.classList.toggle('justyfy-content-space-between')
 })
 
 function getSelectOptions(selectName, subUrl, valueProperty = 'id') {

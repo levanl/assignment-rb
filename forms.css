@@ -44,15 +44,23 @@
     max-width: 1226px;
     background-color: white;
     border-radius: 18px;
-    display: flex;
-    justify-content: center;
+    padding: 88px 44px;
 }
 
-.form {
-    width: 1024px;
-    height: 1024px;
+form {
+    width: 100%;
+    max-width: 926px;
     display: flex;
     flex-direction: column;
+    margin: auto;
+}
+
+.actions{
+    margin: auto;
+    width: 100%;
+    max-width: 926px;
+    margin-top: 88px;
+    text-align: end;
 }
 
 .input-container {
@@ -64,6 +72,15 @@
     gap: 60px;
 }
 
+.back-btn{
+    background-color: transparent;
+    color: #62A1EB;
+}
+
+.back-btn:hover{
+    background-color: transparent;
+    color: #62A1EB;
+}
 
 .dropdown-container {
     height: 180px;
@@ -163,4 +180,9 @@ select {
 #img-preview img{
     width: 300px;
     height: auto;
+}
+
+.justyfy-content-space-between{
+    display: flex;
+    justify-content: space-between;
 }
