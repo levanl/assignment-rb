@@ -1,6 +1,6 @@
 @font-face {
     font-family: "helvetica";
-    src: url("/fonts/HelveticaNeue.ttc");
+    src: url("fonts/HelveticaNeue.ttc");
 }
 
 *, *::before, *::after {
