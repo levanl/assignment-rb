@@ -37,6 +37,7 @@
     justify-content: center;
     height: 342px;
     margin-left: 50px;
+    color: #2E2E2E;
 }
 
 .accInfo {
@@ -48,6 +49,7 @@
     justify-content: center;
     height: 342px;
     margin-left: 50px;
+    color: #797979;
 }
 
 .line {
@@ -76,7 +78,7 @@
     gap: 20px;
     height: 250px;
     align-items: flex-start;
-
+    color: #2E2E2E;
 }
 
 .acc-info-details {
@@ -86,6 +88,7 @@
     font-weight: 400;
     gap: 20px;
     height: 250px;
+    color: #797979;
 
 }
 

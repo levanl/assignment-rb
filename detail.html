@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Details</title>
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="detail.css">
-    <script async src="detail.js" ></script>
+    <script async src="detail.js"></script>
 </head>
+
 <body>
     <header>
         <a class="back-btn" href="/list.html">
@@ -35,11 +37,11 @@
                 <span>ტელ.ნომერი:</span>
             </div>
             <div class="accInfo">
-                <span>აკაკი წერეთელი</span>
-                <span>დიზაინერები</span>
-                <span>ილუსტრატორი</span>
-                <span>ako@redberry.ge</span>
-                <span>+995 595808290</span>
+                <span id="name">აკაკი წერეთელი</span>
+                <span id="team">დიზაინერები</span>
+                <span id="position">ილუსტრატორი</span>
+                <span id="email">ako@redberry.ge</span>
+                <span id="number">+995 595808290</span>
             </div>
             <div class="line"></div>
         </div>
@@ -53,10 +55,10 @@
                 </div>
 
                 <div class="acc-info-details">
-                    <span>Razor Bla Bla</span>
-                    <span>HP</span>
-                    <span>16</span>
-                    <span>SSD</span>
+                    <span id="laptopNameId">Razor Bla Bla</span>
+                    <span id="laptopBrand"></span>
+                    <span id="laptopRam">16</span>
+                    <span id="memory">SSD</span>
                 </div>
             </div>
             <div class="second-laptop">
@@ -66,12 +68,26 @@
                     <span>CPU-ს ნაკადი:</span>
                 </div>
                 <div class="acc-info-details">
-                    <span>Intel 5</span>
-                    <span>13</span>
-                    <span>67</span>
+                    <span id="cpuType">Intel 5</span>
+                    <span id="cpuCoreId">13</span>
+                    <span id="cpuFlowId">67</span>
                 </div>
+            </div>
+    
+        </div>
+        <div class="lastInfo">
+            <div class="laptop-info-details">
+                <span>CPU:</span>
+                <span>CPU-ს ბირთვი:</span>
+                <span>CPU-ს ნაკადი:</span>
+            </div>
+            <div class="acc-info-details">
+                <span id="cpuType">Intel 5</span>
+                <span id="cpuCoreId">13</span>
+                <span id="cpuFlowId">67</span>
             </div>
         </div>
     </div>
 </body>
+
 </html>
